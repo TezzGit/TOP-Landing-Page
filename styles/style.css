@@ -1,4 +1,5 @@
 body {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     margin: 0px;
@@ -10,7 +11,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 64px;
+    padding: 0px 32px;
 }
 
 .logo {
@@ -43,24 +44,21 @@ h1 {
     background-color: #1F2937;
     color: white;
     display: flex;
-    justify-content: space-around;
+    gap: 64px;
+    flex: 1;
+    justify-content: center;
     align-items: center;
-    gap: 16px;
-    padding: 32px;
 }
 
-#hero-img {
-    display: flex;
-    max-width: 350px;
-}
-
-.hero-2 {
-    display: flex;
+.hero-1 {
     flex: 1;
 }
 
-
-
+.hero-2 {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
 
 button {
     background-color: #3882F6;
@@ -80,16 +78,19 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 32px;
 }
 
 .collection {
     display: flex;
+    flex: 1;
+    gap: 16px;
 }
 
 .card {
     display: flex;
     flex-direction: column;
+    flex: 1;
+    justify-content: center;
     align-items: center;
 }
 
@@ -102,7 +103,6 @@ h2 {
 .quote-container {
     display: flex;
     flex-direction: column;
-    padding: 32px;
     align-items: flex-end;
     background-color: #e5e7eb;
 }
@@ -118,17 +118,16 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 64px;
 }
 
 .banner {
     background-color: #3882F6;
-    padding: 64px 128px;
     border-radius: 32px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 64px;
+    padding: 32px;
 }
 
 .left {
@@ -144,6 +143,8 @@ h2 {
 #content {
     display: flex;
     flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
 }
 
 #footer {
@@ -152,4 +153,10 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.container {
+    flex: 1;
+    justify-content: center;
+    padding: 64px;
 }
